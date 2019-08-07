@@ -1,5 +1,9 @@
 <h1>Flats bg</h1>
 
+<%= link_to new_flat_path do %>
+    <p><i class="fas fa-plus"></i> Add a flat </p>
+<% end %>
+
 <ul>
   <div class="cards">
     <% @flats.each do |flat| %>
@@ -22,20 +26,4 @@
         </div>
     <% end %>
   </div>
-  <!-- <div class="cards">
-    <% @flats.each do |flat| %>
-      <li>
-        <div class="card">
-          <h3><%= flat.name %></h3>
-          <p><%= flat.address %></p>
-          <p>
-            <i class="fas fa-user-friends"></i>
-            <%= flat.number_of_guests %>
-            <i class="fas fa-euro-sign"></i>
-            <%= flat.price_per_night %>
-          </p>
-        </div>
-      </li>
-    <% end %>
-  </div> -->
 </ul>
